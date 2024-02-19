@@ -1,0 +1,50 @@
+<ion-header class="custom-header">
+  <ion-toolbar class="custom-toolbar">
+    <ion-title>
+      Cultivos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <h1> Cultivo 1 </h1>
+  <ion-grid>
+    <ion-row>
+      <ion-card class="ion-align-items-center ion-justify-content-center ion-text-center">
+        <ion-card-header>
+          <ion-card-title>Informacion</ion-card-title>
+        </ion-card-header>
+        <img alt="Silhouette of mountains" src="https://i.pinimg.com/564x/30/91/cf/3091cfba806296cbe1f5fdd6eec55f92.jpg" />
+        <ion-card-content>
+         <br>
+          <ion-select placeholder="Selecciona" (ionChange)="onEtapaChange($event.target.value)">
+            <div slot="label"> <ion-text>Etapa:</ion-text></div>
+            <ion-select-option value="brote">Brote</ion-select-option>
+            <ion-select-option value="floracion">Floracion</ion-select-option>
+            <ion-select-option value="frutificacion">Frutificacion</ion-select-option>
+          </ion-select>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+  
+  <h1> Cultivo 2 </h1>
+  <ion-grid >
+    <ion-row>
+      <ion-card class="ion-align-items-center ion-justify-content-center ion-text-center">
+        <ion-card-header>
+          <ion-card-title>Informacion</ion-card-title>
+        </ion-card-header>
+        <img alt="Silhouette of mountains" src="https://i.pinimg.com/564x/3a/ed/9b/3aed9bdc8fd04982cd51f26381aa734e.jpg" />
+        <ion-card-content>
+         <br>
+          <ion-select placeholder="Selecciona" (ionChange)="onEtapaChange2($event.target.value)">
+            <div slot="label"> <ion-text>Etapa:</ion-text></div>
+            <ion-select-option value="brote">Brote</ion-select-option>
+            <ion-select-option value="floracion">Floracion</ion-select-option>
+            <ion-select-option value="frutificacion">Frutificacion</ion-select-option>
+          </ion-select>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+</ion-content>

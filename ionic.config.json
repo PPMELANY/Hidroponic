@@ -1,0 +1,7 @@
+{
+  "name": "HIDROFARM",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

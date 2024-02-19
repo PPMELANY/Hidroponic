@@ -1,0 +1,122 @@
+
+  /* Establecer el color de fondo personalizado para el ion-toolbar */
+  .image-container {
+    position: relative;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Cambia el color del texto según tus necesidades */
+  }
+  .mont  {
+    color: #000000;
+    font-size: 50px;
+  }
+
+  .custom-toolbar {
+    --background: #A4BE7B;
+    --color: #576442;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+  }
+
+  ion-content  {
+    --background: #fffefd;
+  }
+  ion-col {
+    margin: 2%;
+    color: #36662A;
+    text-align: center;
+    border: 1px solid #898121;
+  }
+
+  h1{
+    color: #36662A;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  p{
+    color: #36662A;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+  }
+
+  .title{
+    margin: 4%;
+  }
+  *{
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+  }
+  
+  .circle {
+    position: relative;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    border: 10px solid transparent; /* Ancho del borde */
+    border-top-color: red; /* Color del borde */
+    border-bottom-color: red; /* Color del borde */
+    border-left-color: red; /* Color del borde */
+    border-right-color: red; /* Color del borde */
+    animation: animate 5s linear infinite;
+  }
+
+  .circle2{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    border: 10px solid transparent; /* Ancho del borde */
+    border-top-color: red; /* Color del borde */
+    border-bottom-color: red; /* Color del borde */
+    border-left-color: red; /* Color del borde */
+    border-right-color: red; /* Color del borde */
+    animation: animate 5s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .mont {
+    text-align: center;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .red { border-top-color: rgb(253, 48, 48); border-bottom-color: rgb(253, 48, 48); border-left-color: #fffefd; border-right-color:#fffefd; }
+  .orange { border-top-color: orange; border-bottom-color: orange; border-left-color: fffefd; border-right-color: fffefd; }
+  .yellow { border-top-color: yellow; border-bottom-color: yellow; border-left-color: #fffefd; border-right-color: #fffefd; }
+  .lightgreen { border-top-color: rgb(156, 255, 156); border-bottom-color: rgb(156, 255, 156); border-left-color: #fffefd; border-right-color: #fffefd; }
+  .darkgreen { border-top-color: rgb(10, 121, 10); border-bottom-color: rgb(10, 121, 10); border-left-color: #fffefd; border-right-color: #fffefd; }
+  .darkblue { border-top-color: rgb(2, 2, 181); border-bottom-color: rgb(2, 2, 181); border-left-color: #fffefd; border-right-color: #fffefd; }
+  .purple { border-top-color: rgb(146, 32, 146); border-bottom-color: rgb(146, 32, 146); border-left-color: #fffefd; border-right-color: #fffefd; }
+  
