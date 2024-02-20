@@ -57,22 +57,7 @@
     box-sizing: border-box;
   }
   
-  .circle {
-      position: relative;
-      top: 50%;
-      left: 0;
-      transform: translate(-50%, -50%);
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      box-shadow: 0 0 20px rgba(149, 178, 154, 0.5);
-      border: 10px solid transparent; /* Ancho del borde */
-      border-top-color: rgb(255, 255, 0); /* Color del borde */
-      border-bottom-color: rgb(255, 255, 0); /* Color del borde */
-      border-left-color: rgb(255, 255, 0); /* Color del borde */
-      border-right-color: rgb(255, 255, 0); /* Color del borde */
-      animation: animate 5s linear infinite;
-  }
+
 
   .circle2 {
     position: relative;
@@ -127,6 +112,5 @@
   ion-card {
     --background: #edf2e3;
     --color: #006400; /* Verde oscuro */
-    margin: 0%;
   }
   
