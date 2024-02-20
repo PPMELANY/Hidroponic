@@ -83,15 +83,15 @@ export class Tab2Page implements OnInit {
     return 'black'; // Valor predeterminado si ninguno de los bloques if se cumple
   }
   getColorClass2() {
-    if (this.ph2 >= 1 && this.ph2 <= 2) {
+    if (this.ph2 >= 0 && this.ph2 <= 1) {
       return 'red';
-    } else if (this.ph2 >= 3 && this.ph2 <= 4) {
+    } else if (this.ph2 >= 2 && this.ph2 <= 3) {
       return 'orange';
-    } else if (this.ph2 >= 5 && this.ph2 <= 6) {
+    } else if (this.ph2 >= 4  && this.ph2 <= 5) {
       return 'yellow';
-    } else if (this.ph2 >= 7 && this.ph2 <= 8) {
+    } else if (this.ph2 >= 6 && this.ph2 <= 7) {
       return 'lightgreen';
-    } else if (this.ph2 >= 9 && this.ph2 <= 10) {
+    } else if (this.ph2 >= 8 && this.ph2 <= 10) {
       return 'darkgreen';
     } else if (this.ph2 >= 11 && this.ph2 <= 12) {
       return 'darkblue';

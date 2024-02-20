@@ -3,6 +3,8 @@
   .image-container {
     position: relative;
   }
+
+  
   
   .text-overlay {
     position: absolute;
@@ -31,12 +33,13 @@
     margin: 2%;
     color: #36662A;
     text-align: center;
-    border: 1px solid #898121;
   }
 
   h1{
     color: #36662A;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vh;
+    font-size: 4vw;
   }
 
   p{
@@ -55,38 +58,39 @@
   }
   
   .circle {
-    position: relative;
-    top: 50%;
-    left: 43%;
-    transform: translate(-50%, -50%);
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    border: 10px solid transparent; /* Ancho del borde */
-    border-top-color: red; /* Color del borde */
-    border-bottom-color: red; /* Color del borde */
-    border-left-color: red; /* Color del borde */
-    border-right-color: red; /* Color del borde */
-    animation: animate 5s linear infinite;
+      position: relative;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(149, 178, 154, 0.5);
+      border: 10px solid transparent; /* Ancho del borde */
+      border-top-color: rgb(255, 255, 0); /* Color del borde */
+      border-bottom-color: rgb(255, 255, 0); /* Color del borde */
+      border-left-color: rgb(255, 255, 0); /* Color del borde */
+      border-right-color: rgb(255, 255, 0); /* Color del borde */
+      animation: animate 5s linear infinite;
   }
 
-  .circle2{
+  .circle2 {
     position: relative;
     top: 50%;
-    left: 50%;
+    left: 0;
     transform: translate(-50%, -50%);
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(149, 178, 154, 0.5);
     border: 10px solid transparent; /* Ancho del borde */
-    border-top-color: red; /* Color del borde */
-    border-bottom-color: red; /* Color del borde */
-    border-left-color: red; /* Color del borde */
-    border-right-color: red; /* Color del borde */
+    border-top-color: rgb(255, 255, 0); /* Color del borde */
+    border-bottom-color: rgb(255, 255, 0); /* Color del borde */
+    border-left-color: rgb(255, 255, 0); /* Color del borde */
+    border-right-color: rgb(255, 255, 0); /* Color del borde */
     animation: animate 5s linear infinite;
   }
+  
   
   @keyframes animate {
     0% {
@@ -112,11 +116,17 @@
     position: relative;
   }
   
-  .red { border-top-color: rgb(253, 48, 48); border-bottom-color: rgb(253, 48, 48); border-left-color: #fffefd; border-right-color:#fffefd; }
-  .orange { border-top-color: orange; border-bottom-color: orange; border-left-color: fffefd; border-right-color: fffefd; }
-  .yellow { border-top-color: yellow; border-bottom-color: yellow; border-left-color: #fffefd; border-right-color: #fffefd; }
-  .lightgreen { border-top-color: rgb(156, 255, 156); border-bottom-color: rgb(156, 255, 156); border-left-color: #fffefd; border-right-color: #fffefd; }
-  .darkgreen { border-top-color: rgb(10, 121, 10); border-bottom-color: rgb(10, 121, 10); border-left-color: #fffefd; border-right-color: #fffefd; }
-  .darkblue { border-top-color: rgb(2, 2, 181); border-bottom-color: rgb(2, 2, 181); border-left-color: #fffefd; border-right-color: #fffefd; }
-  .purple { border-top-color: rgb(146, 32, 146); border-bottom-color: rgb(146, 32, 146); border-left-color: #fffefd; border-right-color: #fffefd; }
+  .red { border-top-color: rgb(253, 48, 48); border-bottom-color: rgb(253, 48, 48); border-left-color: #dae0ce; border-right-color:#dae0ce; }
+  .orange { border-top-color: orange; border-bottom-color: orange; border-left-color: #dae0ce; border-right-color: #dae0ce; }
+  .yellow { border-top-color: yellow; border-bottom-color: yellow; border-left-color: #dae0ce; border-right-color: #dae0ce; }
+  .lightgreen { border-top-color: rgb(156, 255, 156); border-bottom-color: rgb(156, 255, 156); border-left-color: #dae0ce; border-right-color: #dae0ce; }
+  .darkgreen { border-top-color: rgb(10, 121, 10); border-bottom-color: rgb(10, 121, 10); border-left-color: #dae0ce; border-right-color: #dae0ce; }
+  .darkblue { border-top-color: rgb(2, 2, 181); border-bottom-color: rgb(2, 2, 181); border-left-color: #dae0ce; border-right-color: #dae0ce; }
+  .purple { border-top-color: rgb(146, 32, 146); border-bottom-color: rgb(146, 32, 146); border-left-color: #dae0ce; border-right-color: #dae0ce; }
+  
+  ion-card {
+    --background: #edf2e3;
+    --color: #006400; /* Verde oscuro */
+    margin: 0%;
+  }
   

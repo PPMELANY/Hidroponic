@@ -47,4 +47,28 @@
       </ion-card>
     </ion-row>
   </ion-grid>
+
+  <ion-list [inset]="true">
+    <ion-item [button]="true" detail="false">
+      <div class="unread-indicator-wrapper" slot="start"></div>
+      <ion-label>
+        <ion-text>Cultivos</ion-text><br />
+        <ion-note color="medium" class="ion-text-wrap">Estos cultivos solo permiten
+          plantas de hoja verde como perejil, lechugam excepto la lechuga repollo por su peso, apio, etc.
+        </ion-note>
+      </ion-label>
+    </ion-item>
+
+    <ion-item [button]="true" detail="false">
+      <div class="unread-indicator-wrapper" slot="start"></div>
+      <ion-label>
+        <ion-text>Niveles de Ph</ion-text><br />
+        <ion-note color="medium" class="ion-text-wrap">Para el hidroponico el nivel de ph en el que se deberia de estar
+          equivale entre el 6 a 7.
+        </ion-note>
+        <img alt="Silhouette of mountains" src="https://tecnicrop.com/storage/blogs/60/STo840E1jKARCptrgAmxUPy6SOTFQs5whJRxWATG.png" />
+
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

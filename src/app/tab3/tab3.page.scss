@@ -9,7 +9,7 @@ ion-select {
   --background: #C8DBBE;
 }
 ion-content  {
-  --background: #F7FFF7;
+  --background: #fffefd;
 }
 ion-col {
   background-color: #D6E5D4;
@@ -36,6 +36,63 @@ p{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 img{ 
-  height: auto; /* Esto hará que la imagen se ajuste automáticamente al tamaño del card */
-  max-width: 100%; /* Esto hará que la imagen se ajuste automáticamente al tamaño del card */
+  height: 100%; /* Esto hará que la imagen ocupe el 100% del tamaño del card */
+  width: 100%; /* Esto hará que la imagen ocupe el 100% del tamaño del card */
+  object-fit: cover;
+}
+ion-select{
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.unread-indicator {
+  background: var(--ion-color-primary);
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 100%;
+
+  position: absolute;
+
+  inset-inline-start: 12px;
+  top: 12px;
+}
+
+.metadata-end-wrapper {
+  position: absolute;
+
+  top: 10px;
+  inset-inline-end: 10px;
+
+  font-size: 0.8rem;
+
+  display: flex;
+  align-items: center;
+}
+
+ion-label strong {
+  display: block;
+
+  max-width: calc(100% - 60px);
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+ion-label ion-note {
+  font-size: 0.9rem;
+}
+ion-list{
+  --background: #99a793;
+ // --color: #46647a;
+}
+
+ion-item{
+  --background: #d9e5d3;
+ // --color: #46647a;
+}
+ion-text{
+  color: #3b5364;
 }
