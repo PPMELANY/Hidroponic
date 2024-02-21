@@ -5,41 +5,50 @@
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
 }
+
 ion-select {
   --background: #C8DBBE;
 }
+
 ion-content  {
   --background: #fffefd;
 }
+
 ion-col {
   background-color: #D6E5D4;
   margin: 0%;
   color: #36662A;
   text-align: center;
 }
+
 ion-card {
   --background: #C8DBBE;
   --color: #46647a;
   width: 90%; /* Establece el ancho del card al 90% del ancho de la pantalla */
   margin: auto; /* Centra el card horizontalmente */
 }
+
 ion-card-title {
   --color: #6E7C7C;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 h1{
   color: #36662A;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 p{
   color: #36662A;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 img{ 
   height: 100%; /* Esto hará que la imagen ocupe el 100% del tamaño del card */
   width: 100%; /* Esto hará que la imagen ocupe el 100% del tamaño del card */
   object-fit: cover;
 }
+
 ion-select{
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -47,52 +56,77 @@ ion-select{
 
 .unread-indicator {
   background: var(--ion-color-primary);
-
   width: 10px;
   height: 10px;
-
   border-radius: 100%;
-
   position: absolute;
-
   inset-inline-start: 12px;
   top: 12px;
 }
 
 .metadata-end-wrapper {
   position: absolute;
-
   top: 10px;
   inset-inline-end: 10px;
-
   font-size: 0.8rem;
-
   display: flex;
   align-items: center;
 }
 
 ion-label strong {
   display: block;
-
   max-width: calc(100% - 60px);
-
   overflow: hidden;
-
   text-overflow: ellipsis;
 }
 
 ion-label ion-note {
   font-size: 0.9rem;
 }
+
 ion-list{
+  background: #d9e5d3;
+}
+
+.unread-indicator-wrapper{
   --background: #99a793;
- // --color: #46647a;
 }
 
 ion-item{
   --background: #d9e5d3;
- // --color: #46647a;
 }
+
 ion-text{
-  color: #3b5364;
+  color: #26333c;
+  font-size: 15px;
+}
+
+ion-note{
+  color: #485863;
+  font-size: 10px;
+} 
+
+@media screen and (max-width: 368px) {
+  /* Cambia el tamaño de la letra según el tamaño de la pantalla */
+  ion-select {
+    font-size: 15px;
+  }
+  
+  ion-card {
+    width: 100%; /* Establece el ancho del card al 100% del ancho de la pantalla */
+  }
+}
+
+@media screen and (min-width: 369px) and (max-width: 4000px) {
+  /* Cambia el diseño de los cards cuando el ancho de la pantalla esté entre 369px y 4000px */
+  ion-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  ion-col {
+    flex-basis: calc(30% - 20px); /* Establece el ancho de los ion-col al 30% del ancho de la pantalla menos el margen */
+    margin: 10px; /* Agrega un margen entre los ion-col */
+  }
 }

@@ -65,7 +65,7 @@ export class Tab2Page implements OnInit {
     });
   }
   getColorClass() {
-    if (this.ph1 >= 1 && this.ph1 <= 2) {
+    if (this.ph1 >= 0 && this.ph1 <= 2) {
       return 'red';
     } else if (this.ph1 >= 3 && this.ph1 <= 4) {
       return 'orange';

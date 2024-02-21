@@ -6,69 +6,68 @@
   </ion-toolbar>
 </ion-header>
 <ion-content class="ion-padding">
-  <h1> Cultivo 1 </h1>
   <ion-grid>
     <ion-row>
-      <ion-card class="ion-align-items-center ion-justify-content-center ion-text-center">
-        <ion-card-header>
-          <ion-card-title>Informacion</ion-card-title>
-        </ion-card-header>
-        <img alt="Silhouette of mountains" src="https://i.pinimg.com/564x/30/91/cf/3091cfba806296cbe1f5fdd6eec55f92.jpg" />
-        <ion-card-content>
-         <br>
-          <ion-select placeholder="Selecciona" (ionChange)="onEtapaChange($event.target.value)">
-            <div slot="label"> <ion-text>Etapa:</ion-text></div>
-            <ion-select-option value="brote">Brote</ion-select-option>
-            <ion-select-option value="floracion">Floracion</ion-select-option>
-            <ion-select-option value="frutificacion">Frutificacion</ion-select-option>
-          </ion-select>
-        </ion-card-content>
-      </ion-card>
+      <ion-col>
+        <ion-card class="ion-align-items-center ion-justify-content-center ion-text-center">
+          <ion-card-header>
+            <ion-card-title>Informacion</ion-card-title>
+          </ion-card-header>
+          <img alt="Silhouette of mountains" src="https://i.pinimg.com/564x/0d/2b/cb/0d2bcb190d90c42002cac4222612a074.jpg" />
+          <ion-card-content>
+            <ion-text>Cultivo1</ion-text>
+            <br>
+            <ion-select placeholder="Selecciona" (ionChange)="onEtapaChange($event.target.value)">
+              <div slot="label"> <ion-text>Etapa:</ion-text></div>
+              <ion-select-option value="brote">Brote</ion-select-option>
+              <ion-select-option value="floracion">Floracion</ion-select-option>
+              <ion-select-option value="frutificacion">Frutificacion</ion-select-option>
+            </ion-select>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="ion-align-items-center ion-justify-content-center ion-text-center">
+          <ion-card-header>
+            <ion-card-title>Informacion</ion-card-title>
+          </ion-card-header>
+          <img alt="Silhouette of mountains" src="https://i.pinimg.com/236x/30/7f/43/307f43d9e46c3ab1c4457f6f43291e96.jpg" />
+          <ion-card-content>
+            <ion-text>Cultivo2</ion-text>
+            <br>
+            <ion-select placeholder="Selecciona" (ionChange)="onEtapaChange2($event.target.value)">
+              <div slot="label"> <ion-text>Etapa:</ion-text></div>
+              <ion-select-option value="brote">Brote</ion-select-option>
+              <ion-select-option value="floracion">Floracion</ion-select-option>
+              <ion-select-option value="frutificacion">Frutificacion</ion-select-option>
+            </ion-select>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
     </ion-row>
   </ion-grid>
-  
-  <h1> Cultivo 2 </h1>
-  <ion-grid >
-    <ion-row>
-      <ion-card class="ion-align-items-center ion-justify-content-center ion-text-center">
-        <ion-card-header>
-          <ion-card-title>Informacion</ion-card-title>
-        </ion-card-header>
-        <img alt="Silhouette of mountains" src="https://i.pinimg.com/564x/3a/ed/9b/3aed9bdc8fd04982cd51f26381aa734e.jpg" />
-        <ion-card-content>
-         <br>
-          <ion-select placeholder="Selecciona" (ionChange)="onEtapaChange2($event.target.value)">
-            <div slot="label"> <ion-text>Etapa:</ion-text></div>
-            <ion-select-option value="brote">Brote</ion-select-option>
-            <ion-select-option value="floracion">Floracion</ion-select-option>
-            <ion-select-option value="frutificacion">Frutificacion</ion-select-option>
-          </ion-select>
-        </ion-card-content>
-      </ion-card>
-    </ion-row>
-  </ion-grid>
+  <br>
 
-  <ion-list [inset]="true">
-    <ion-item [button]="true" detail="false">
-      <div class="unread-indicator-wrapper" slot="start"></div>
-      <ion-label>
-        <ion-text>Cultivos</ion-text><br />
-        <ion-note color="medium" class="ion-text-wrap">Estos cultivos solo permiten
-          plantas de hoja verde como perejil, lechugam excepto la lechuga repollo por su peso, apio, etc.
-        </ion-note>
-      </ion-label>
-    </ion-item>
+  <ion-item [button]="true" detail="false">
+    <div class="unread-indicator-wrapper" slot="start"></div>
+    <ion-label>
+      <ion-text>Cultivos</ion-text><br />
+      <ion-note color="medium" class="ion-text-wrap">Estos cultivos solo permiten
+        plantas de hoja verde como perejil, lechugam excepto la lechuga repollo por su peso, apio, etc.
+      </ion-note>
+    </ion-label>
+  </ion-item>
 
-    <ion-item [button]="true" detail="false">
-      <div class="unread-indicator-wrapper" slot="start"></div>
-      <ion-label>
-        <ion-text>Niveles de Ph</ion-text><br />
-        <ion-note color="medium" class="ion-text-wrap">Para el hidroponico el nivel de ph en el que se deberia de estar
-          equivale entre el 6 a 7.
-        </ion-note>
-        <img alt="Silhouette of mountains" src="https://tecnicrop.com/storage/blogs/60/STo840E1jKARCptrgAmxUPy6SOTFQs5whJRxWATG.png" />
+  <ion-item [button]="true" detail="false">
+    <div class="unread-indicator-wrapper" slot="start"></div>
+    <ion-label>
+      <ion-text>Niveles de Ph</ion-text><br />
+      <ion-note color="medium" class="ion-text-wrap">Para el hidroponico el nivel de ph en el que se deberia de estar
+        equivale entre el 6 a 7.
+      </ion-note>
+      <img alt="Silhouette of mountains" src="https://tecnicrop.com/storage/blogs/60/STo840E1jKARCptrgAmxUPy6SOTFQs5whJRxWATG.png" />
 
-      </ion-label>
-    </ion-item>
-  </ion-list>
+    </ion-label>
+  </ion-item>
+
 </ion-content>
