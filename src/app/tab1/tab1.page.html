@@ -7,72 +7,102 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <h1> Cultivo 1 </h1>
   <br>
+  <h1>Cultivo de Hoja Verde</h1>
+  <br>
+
   <div class="card-container">
-    
+    <!-- card micro 1 -->
+    <div class="card">
+    <ion-card>  
       <ion-item>
         <img src="https://cdn3.iconfinder.com/data/icons/nutrition-3/64/256_nutrition-nutrient-science-vitamin-molecule-512.png">
-        <ion-toggle aria-label="Enable Notifications"(ionChange)="Micronutrientes1($event)">Micronutrientes
+        <ion-toggle aria-label="Enable Notifications"(ionChange)="Micronutrientes1($event)">Nutrientes
         </ion-toggle>
       </ion-item>
-
+    </ion-card> 
+  </div>
+    <!-- card macro 1 
+    <ion-card>  
       <ion-item>
         <img src="https://www.telematica.com.pe/wp-content/uploads/2022/07/Optimizar-rendimientos-campo-cultivo.png">
         <ion-toggle aria-label="Enable Notifications"(ionChange)="Macronutrientes1($event)">
           Macronutrientes
         </ion-toggle>
       </ion-item>
+    </ion-card>           -->
 
+    <!-- card paso 1 -->
+    <div class="card">
+    <ion-card>
       <ion-item>
         <img src="https://cdn.icon-icons.com/icons2/2338/PNG/512/water_icon_142667.png">
         <ion-toggle aria-label="Enable Notifications"(ionChange)="PasoAgua1($event)">
           Paso de Agua
         </ion-toggle>
       </ion-item>
+    </ion-card>
+  </div>
 
+    <!-- card bamba 1 -->
+    <div class="card">
+    <ion-card>
       <ion-item>
-        <ion-toggle aria-label="Enable Notifications"(ionChange)="bombaAgua($event)">
-          <img src="https://cdn-icons-png.flaticon.com/512/4018/4018882.png">
-          Bomba de Agua
+        <img src="https://cdn-icons-png.flaticon.com/512/4018/4018882.png">
+        <ion-toggle aria-label="Enable Notifications"(ionChange)="bombaAgua($event)"> 
+          Automatico
         </ion-toggle>
       </ion-item>
+    </ion-card>
+  </div>
 
   </div>
   <br>
-  <h1> Cultivo 2 </h1>
+  <h1>Cultivo de Tomates</h1>
   <br>
   <div class="card-container">
+    <!-- card micro 2 -->
+    <div class="card">
+    <ion-card>
       <ion-item>
         <img src="https://cdn3.iconfinder.com/data/icons/nutrition-3/64/256_nutrition-nutrient-science-vitamin-molecule-512.png">
-        <ion-toggle aria-label="Enable Notifications"(ionChange)="Micronutrientes2($event)">Micronutrientes
+        <ion-toggle aria-label="Enable Notifications"(ionChange)="Micronutrientes2($event)">Nutrientes
         </ion-toggle>
       </ion-item>
-
+    </ion-card>
+  </div>
+    <!-- card macro 2 
+    <ion-card>
       <ion-item>
         <img src="https://www.telematica.com.pe/wp-content/uploads/2022/07/Optimizar-rendimientos-campo-cultivo.png">
         <ion-toggle aria-label="Enable Notifications"(ionChange)="Macronutrientes2($event)">
           Macronutrientes
         </ion-toggle>
       </ion-item>
+    </ion-card>     -->
 
+    <!-- card macro 2 -->
+    <div class="card">
+    <ion-card>
       <ion-item>
         <img src="https://cdn.icon-icons.com/icons2/2338/PNG/512/water_icon_142667.png">
         <ion-toggle aria-label="Enable Notifications"(ionChange)="PasoAgua2($event)">
           Paso de Agua
         </ion-toggle>
       </ion-item>
+    </ion-card>
+  </div>
 
+    <!-- card macro 2 -->
+    <div class="card">
+    <ion-card>
       <ion-item>
+        <img src="https://cdn-icons-png.flaticon.com/512/4018/4018882.png">
         <ion-toggle aria-label="Enable Notifications"(ionChange)="bombaAgua2($event)">
-          <img src="https://cdn-icons-png.flaticon.com/512/4018/4018882.png">
-          Bomba de Agua
+          Automatico
         </ion-toggle>
       </ion-item>
+    </ion-card>
   </div>
-  <br>
-  <div class="final">
-  <img class="hidroponico" src="https://i.pinimg.com/736x/86/7e/55/867e55fe7a4333f5fd61a8e1bbb54ab5.jpg">
-  <p class="hidroguard">HIDROGUARD</p>
-</div>
+  </div>
 </ion-content>

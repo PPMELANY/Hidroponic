@@ -1,97 +1,76 @@
 /* Establecer el color de fondo personalizado para el ion-toolbar */
   
-ion-label{
-  font-size: 50px;
-  display: flex; /* Utiliza Flexbox para alinear verticalmente */
-  align-items: center; /* Centra verticalmente */
-  margin: 0%;
+@font-face {
+  font-family: 'Chin';
+  src: url('../../assets/letras/KGRedHands.ttf') format('truetype');
 }
 
-.final {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
+@font-face {
+  font-family: 'Letrero';
+  src: url('../../assets/letras/LTSaeada-Bold.otf') format('opentype');
 }
 
-img.hidroponico {
-  width: 100%;
-  max-width: 100%;
-  margin: auto;
-  opacity: 0.7;
-  box-shadow: 0 0 20px rgba(48, 250, 72, 0.784);
+@font-face {
+  font-family: 'texto';
+  src: url('../../assets/letras/Classica-Book.ttf') format('truetype');
 }
-
-p.hidroguard {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgba(255, 255, 255, 0.704);
-  font-weight: bold;
-  font-size: 2em; /* Tamaño de fuente relativo */
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 20px rgba(0, 255, 0, 0.692);
-}
-
 
 .custom-toolbar {
-  --background: #A4BE7B;
-  --color: #576442;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  --background: #D5F0C1;
+  --color: #616F39;
+  font-family:Chin;
   text-align: center;
 }
 ion-toggle{
-  font-size: 5vh;
-  font-size: 4vw;
+  font-size: 27px;
   margin: 0%;
+  font-family:texto;
 }
 
 ion-content  {
-  --background: #fffefd;
+  --background: #FFFFFF;
   margin: 0%;
 }
-ion-col {
-  background-color: #D6E5D4;
-  margin: 0%;
-  color: #36662A;
-  text-align: center;
-  font-size: 30px;
+
+ion-card {
+  --background: #eef9e6;
 }
 
 ion-item{
   margin: 0%;
-  --background: #EBF3E8;
-  color: #7a855b;
+  --padding-start: 0;
+  --background: #eef9e6;
+  color: #616F39;
   font-size: 30px;
-  display: flex; /* Utiliza Flexbox para alinear verticalmente */
   align-items: center; /* Centra verticalmente */
   font-size: 5vh;
   font-size: 4vw;
 }
 img{
-  width: 10%;
-  margin: 0%;
+  width: 25%;
+  margin: 2%;
+  border-radius: 20%;
+  opacity: 0.4;
 }
 
 h1{
-  color: #50623A;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #A7D129;
+  font-family:Letrero;
   margin: 0%;
+  text-align: center;
 }
 
-/* Media Queries para hacerlo responsive */
+
+
 @media screen and (min-width: 500px) {
-  ion-card {
-    flex-direction: row; /* Cambia la dirección de flexión a fila en pantallas más grandes */
+  .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
-  p.hidroguard {
-    font-size: 5em; /* Aumenta el tamaño de fuente en pantallas más grandes */
+
+  .card {
+    width: calc(50% - 10px); /* Establece el ancho de cada card al 50% del contenedor, menos el espacio entre ellos */
+    margin-bottom: 20px; /* Agrega un margen inferior para separar los cards */
   }
 }
