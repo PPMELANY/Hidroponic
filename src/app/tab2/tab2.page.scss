@@ -28,7 +28,8 @@
 }
 .mont  {
   color: #000000;
-  font-size: 50px;
+  font-family:texto;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -52,7 +53,7 @@ ion-col {
 h1{
   color: #396f47;
   font-family:texto;
-  font-size: 3vw; /* Cambia el tamaño de la fuente de h1 a 3% del ancho de la ventana gráfica */
+  font-size: 2vw; /* Cambia el tamaño de la fuente de h1 a 3% del ancho de la ventana gráfica */
 }
 
 p{
