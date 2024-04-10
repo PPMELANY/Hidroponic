@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "hidroponico-410d3": {
+      "hosting": {
+        "app": [
+          "hidroponico-410d3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "hidroponico-410d3"
+  }
+}

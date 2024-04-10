@@ -10,6 +10,8 @@ export class Tab3Page {
 
   constructor(private db: Firestore) {}
 
+  
+
   onEtapaChange(etapa: string) {
     let valor: number;
 

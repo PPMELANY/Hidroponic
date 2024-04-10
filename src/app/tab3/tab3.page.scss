@@ -70,8 +70,21 @@ img{
   display: block;
   margin: auto;
 }
+ion-popover {
+  --background: rgba(40, 218, 64, 0.6);
+  --backdrop-opacity: 0.6;
+  --box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
+  --color: white;
+  --width: 390px;
+}
 
+ion-popover ion-content {
+  --background: rgba(18, 108, 42, 0.6);
+}
 
+ion-popover::part(backdrop) {
+  background-color: rgb(34, 69, 35);
+}
 
 ion-select {
   --background: #eef9e6;
